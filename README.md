@@ -14,7 +14,7 @@ Karena aplikasi memuat data secara asinkron dari file lokal (`sensors.json`) men
 
 Untuk menjalankannya dengan benar:
 
-1. Klik tombol **<> Code**, pilih opsi "Download Zip".
+1. Pada GitHub klik tombol **<> Code**, pilih opsi "Download Zip".
 2. Buka folder proyek ini di **Visual Studio Code (VS Code)**.
 3. Pastikan kamu sudah menginstal ekstensi **Live Server**.
 4. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"** (atau tekan tombol _Go Live_ di pojok kanan bawah VS Code).
