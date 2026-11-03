@@ -1,0 +1,8 @@
+[
+  { "id": "SNS-A01", "lokasi": "Gudang A - Rak 1", "gudang": "A", "suhu": -18.2, "kelembapan": 55, "koneksi": "online", "update_terakhir": "2026-10-20 08:00" },
+  { "id": "SNS-A02", "lokasi": "Gudang A - Rak 2", "gudang": "A", "suhu": -13.5, "kelembapan": 60, "koneksi": "online", "update_terakhir": "2026-10-20 08:00" },
+  { "id": "SNS-A03", "lokasi": "Gudang A - Rak 3", "gudang": "A", "suhu": -20.1, "kelembapan": 48, "koneksi": "offline", "update_terakhir": "2026-10-20 07:20" },
+  { "id": "SNS-B01", "lokasi": "Gudang B - Rak 1", "gudang": "B", "suhu": 4.5, "kelembapan": 70, "koneksi": "online", "update_terakhir": "2026-10-20 08:00" },
+  { "id": "SNS-B02", "lokasi": "Gudang B - Rak 2", "gudang": "B", "suhu": 9.2, "kelembapan": 72, "koneksi": "online", "update_terakhir": "2026-10-20 08:00" },
+  { "id": "SNS-B03", "lokasi": "Gudang B - Rak 3", "gudang": "B", "suhu": 3.1, "kelembapan": 86, "koneksi": "online", "update_terakhir": "2026-10-20 08:00" }
+]
