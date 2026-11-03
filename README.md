@@ -14,10 +14,12 @@ Karena aplikasi memuat data secara asinkron dari file lokal (`sensors.json`) men
 
 Untuk menjalankannya dengan benar:
 
-1. Buka folder proyek ini di **Visual Studio Code (VS Code)**.
-2. Pastikan kamu sudah menginstal ekstensi **Live Server**.
-3. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"** (atau tekan tombol _Go Live_ di pojok kanan bawah VS Code).
-4. Web akan otomatis terbuka di browser pada alamat `http://127.0.0.1:5500`.
+1. Pada GitHub klik tombol **<> Code**, pilih opsi "Download Zip".
+2. Setelah didownload ekstrak folder di dalam PC anda.
+3. Buka folder proyek ini di **Visual Studio Code (VS Code)**.
+4. Pastikan sudah menginstal ekstensi **Live Server**.
+5. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"** (atau tekan tombol _Go Live_ di pojok kanan bawah VS Code).
+6. Web akan otomatis terbuka di browser pada alamat `http://127.0.0.1:5500`.
 
 ## 📂 Struktur Folder
 
@@ -50,7 +52,7 @@ Penentuan status sensor (Normal, Peringatan, Offline) tidak _hardcoded_ di HTML,
 
 ---
 
-## ✨ Fitur Tambahan (Nilai Plus)
+## ✨ Fitur Tambahan
 
 Selain menyelesaikan _Use Case_ utama, proyek ini juga mengimplementasikan seluruh tugas opsional (Nilai Tambah):
 
@@ -62,13 +64,11 @@ Selain menyelesaikan _Use Case_ utama, proyek ini juga mengimplementasikan selur
 
 ## 📱 Screenshot Tampilan
 
-_(Catatan: Ganti placeholder ini dengan gambar screenshot aslimu sebelum dikumpulkan)_
+### Tampilan Desktop
 
-### Tampilan Desktop (Light Mode)
+![Screenshot Desktop](assets/ss_desktop.png)
 
-![Screenshot Desktop](link_ke_gambar_desktop.png)
-
-### Tampilan Mobile (Dark Mode)
+### Tampilan Mobile
 
 ![Screenshot Mobile](link_ke_gambar_mobile.png)
 
