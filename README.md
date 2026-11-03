@@ -15,10 +15,11 @@ Karena aplikasi memuat data secara asinkron dari file lokal (`sensors.json`) men
 Untuk menjalankannya dengan benar:
 
 1. Pada GitHub klik tombol **<> Code**, pilih opsi "Download Zip".
-2. Buka folder proyek ini di **Visual Studio Code (VS Code)**.
-3. Pastikan kamu sudah menginstal ekstensi **Live Server**.
-4. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"** (atau tekan tombol _Go Live_ di pojok kanan bawah VS Code).
-5. Web akan otomatis terbuka di browser pada alamat `http://127.0.0.1:5500`.
+2. Setelah didownload ekstrak folder di dalam PC anda.
+3. Buka folder proyek ini di **Visual Studio Code (VS Code)**.
+4. Pastikan sudah menginstal ekstensi **Live Server**.
+5. Klik kanan pada file `index.html` lalu pilih **"Open with Live Server"** (atau tekan tombol _Go Live_ di pojok kanan bawah VS Code).
+6. Web akan otomatis terbuka di browser pada alamat `http://127.0.0.1:5500`.
 
 ## 📂 Struktur Folder
 
