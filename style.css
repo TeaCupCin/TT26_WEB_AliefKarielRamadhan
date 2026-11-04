@@ -163,10 +163,10 @@ body {
   display: flex;
   flex-wrap: nowrap;
   gap: 8px;
-  justify-content: start;
+  justify-content: flex-start;
   overflow-x: auto;
   white-space: nowrap;
-  padding-bottom: 4px;
+  padding: 0 16px 4px 16px;
   -webkit-overflow-scrolling: touch;
 }
 
