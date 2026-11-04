@@ -166,7 +166,7 @@ body {
   justify-content: flex-start;
   overflow-x: auto;
   white-space: nowrap;
-  padding: 0 0 4px 0;
+  padding-bottom: 4px;
   -webkit-overflow-scrolling: touch;
 }
 
