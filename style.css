@@ -161,9 +161,17 @@ body {
 
 .filter {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   gap: 8px;
   justify-content: start;
+  overflow-x: auto;
+  white-space: nowrap;
+  padding-bottom: 4px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.filter::-webkit-scrollbar {
+  display: none;
 }
 
 .filter__btn {
@@ -313,7 +321,7 @@ body {
 }
 
 .site-footer {
-  padding: 16px;
+  padding: 16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
   background: var(--footer);
   color: var(--footer-text);
   text-align: center;
