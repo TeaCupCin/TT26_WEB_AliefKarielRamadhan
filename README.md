@@ -1,5 +1,7 @@
 # 📦 SmartWarehouse - Monitoring Gudang TaggIoT
 
+**🔗 Live Demo:** [Klik di sini untuk membuka aplikasi](https://teacupcin.github.io/TT26_WEB_AliefKarielRamadhan/)
+
 Repositori ini berisi hasil pengerjaan Tes Teknis untuk posisi **Junior Web Developer Specialist** pada Program Magang TaggIoT 2026. Aplikasi web ini berfungsi sebagai _dashboard_ pemantauan kondisi suhu dan kelembapan sensor di dua gudang (Gudang A - Beku, dan Gudang B - Segar).
 
 **Disusun oleh:** Alief Kariel Ramadhan (Kode Tes: TT26-01-WEB)
@@ -68,9 +70,13 @@ Selain menyelesaikan _Use Case_ utama, proyek ini juga mengimplementasikan selur
 
 ![Screenshot Desktop](assets/ss_desktop.png)
 
-### Tampilan Mobile
+### Tampilan Mobile (Android)
 
-![Screenshot Mobile](link_ke_gambar_mobile.png)
+![Screenshot Mobile](assets/ss_android.jpeg)
+
+### Tampilan Mobile (IOS)
+
+![Screenshot Mobile](assets/ss_IOS.jpeg)
 
 ---
 
