@@ -1,22 +1,23 @@
-//Batas aman tiap gudang
+//Konfigurasi Batas Suhu & Kelembapan
 const BATAS_SUHU = {
   A: { min: -25, max: -15 },
   B: { min: 0, max: 8 },
 };
 const BATAS_KELEMBAPAN = { min: 40, max: 80 };
 
+//Tema Dark Mode
+const KUNCI_TEMA = 'tema';
+const temaToggleEl = document.getElementById('theme-toggle');
+const temaIkonEl = document.getElementById('theme-icon');
+
+//Mengambil data dari file sensors.json
 async function muatSensor() {
   const res = await fetch('sensors.json');
   if (!res.ok) throw new Error('Gagal memuat sensors.json');
   return res.json();
 }
 
-//Tema Dark Mode
-const KUNCI_TEMA = 'tema';
-const temaToggleEl = document.getElementById('theme-toggle');
-const temaIkonEl = document.getElementById('theme-icon');
-
-//Prioritas: Offline, lalu Peringatan, lalu Normal
+//Menentukkan status sensor (Prioritas: Offline, lalu Peringatan, lalu Normal)
 function getStatus(sensor) {
   if (sensor.koneksi === 'offline') return 'offline';
   const suhu = BATAS_SUHU[sensor.gudang];
@@ -25,6 +26,8 @@ function getStatus(sensor) {
 
   return suhuAman && lembapAman ? 'normal' : 'peringatan';
 }
+
+//Menghitung total jumlah sensor untuk masing masing status pada summary box di atas
 function hitungSummary(sensors) {
   const hasil = { normal: 0, peringatan: 0, offline: 0 };
   sensors.forEach((sensor) => {
@@ -33,6 +36,7 @@ function hitungSummary(sensors) {
   return hasil;
 }
 
+//Menampilkan hasi hitungan dari fungsi 'hitungSummary' ke halaman web
 function tampilkanSummary(hasil) {
   document.getElementById('count-normal').textContent = hasil.normal;
   document.getElementById('count-peringatan').textContent = hasil.peringatan;
@@ -55,13 +59,14 @@ const LABEL_STATUS = {
   offline: 'Offline',
 };
 
-// "2026-10-20 08:00" menjadi "20-10-2026 08:00"
+// Format tanggal
 function formatWaktu(teks) {
   const [tanggal, jam] = teks.split(' ');
   const [tahun, bulan, hari] = tanggal.split('-');
   return `${hari}-${bulan}-${tahun} ${jam}`;
 }
 
+//Mencetak satu buah elemen kartu HTML utuh dari data satu sensor
 function buatKartu(sensor) {
   const status = getStatus(sensor);
   const kartu = templateEl.content.cloneNode(true);
@@ -83,12 +88,15 @@ function buatKartu(sensor) {
 
   return kartu;
 }
+
+//Mengecek apakah kartu sensor cocok dengan kata yang diketik user di kolom pencarian.
 function cocokPencarian(sensor) {
   const kunci = kataKunci.trim().toLowerCase();
   if (!kunci) return true;
   return sensor.id.toLowerCase().includes(kunci) || sensor.lokasi.toLowerCase().includes(kunci);
 }
 
+//Menyaring dan memasang kartu-kartu sensor yang lolos syarat ke dalam grid layar.
 function tampilkanKartu() {
   if (gagalMuat) return;
   gridEl.replaceChildren();
@@ -99,6 +107,7 @@ function tampilkanKartu() {
   tampil.forEach((sensor) => gridEl.appendChild(buatKartu(sensor)));
 }
 
+//Menghidupkan interaksi ketikan di kotak pencarian dan klik pada 4 tombol filter.
 function pasangPencarian() {
   const input = document.getElementById('search-input');
   input.addEventListener('input', (event) => {
@@ -125,7 +134,9 @@ function pasangFilter() {
     tampilkanKartu();
   });
 }
+//---------------------------------------//
 
+//Mengubah tampilan layar ketika data sensors.json gagal dimuat
 function tampilkanError() {
   gagalMuat = true;
   gridEl.replaceChildren();
@@ -137,6 +148,7 @@ function tampilkanError() {
   });
 }
 
+//Mengatur fitur Dark Mode dan Light Mode
 function terapkanTema(tema) {
   const gelap = tema === 'dark';
   document.documentElement.dataset.theme = tema;
@@ -167,7 +179,9 @@ function pasangTema() {
     }
   });
 }
+//--------------------------------//
 
+//menyatukan dan menjalankan seluruh alur program dari awal
 async function init() {
   pesanErrorEl.hidden = true;
 
