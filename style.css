@@ -27,7 +27,6 @@
   color-scheme: light;
 }
 
-/* Timpa nilai variabel saat atribut data-theme='dark' aktif di tag <html> */
 :root[data-theme='dark'] {
   --primary: #34d399;
   --on-primary: #04231c;
@@ -526,7 +525,6 @@ body {
 
 /* ==========================================================================
    10. FOOTER
-   Bagian kaki halaman dengan dukungan penuh Safe Area iOS (iPhone).
    ========================================================================== */
 .site-footer {
   padding: 16px 16px calc(16px + env(safe-area-inset-bottom)) 16px;
@@ -541,8 +539,7 @@ body {
 }
 
 /* ==========================================================================
-   11. RESPONSIVE DESIGN (MEDIA QUERIES - DESKTOP)
-   Penyesuaian tata letak khusus untuk layar lebar minimal 960px ke atas.
+   11. RESPONSIVE DESIGN 
    ========================================================================== */
 @media (min-width: 960px) {
   .site-header {
