@@ -68,15 +68,15 @@ Selain menyelesaikan _Use Case_ utama, proyek ini juga mengimplementasikan selur
 
 ### Tampilan Desktop
 
-![Screenshot Desktop](assets/ss_desktop.png)
+<img src="assets/ss_desktop.png" alt="Screenshot Desktop" width="800">
 
 ### Tampilan Mobile (Android)
 
-![Screenshot Mobile](assets/ss_android.jpeg)
+<img src="assets/ss_android.jpeg" alt="Screenshot Mobile Android" width="250">
 
 ### Tampilan Mobile (IOS)
 
-![Screenshot Mobile](assets/ss_IOS.jpeg)
+<img src="assets/ss_IOS.jpeg" alt="Screenshot Mobile IOS" width="250">
 
 ---
 
