@@ -28,7 +28,7 @@ Untuk menjalankannya dengan benar:
 ```text
 TT26_WEB_AliefKarielRamadhan/
 │
-├── assets/                  # Folder berisi kumpulan ikon SVG & Logo
+├── assets/                  # Folder berisi kumpulan Gambar & Logo
 ├── index.html               # Struktur utama antarmuka web (Semantic HTML)
 ├── style.css                # Styling menggunakan Vanilla CSS & Dark Mode support
 ├── script.js                # Logika filter, manipulasi DOM, & auto-refresh
@@ -58,7 +58,7 @@ Penentuan status sensor (Normal, Peringatan, Offline) tidak _hardcoded_ di HTML,
 
 Selain menyelesaikan _Use Case_ utama, proyek ini juga mengimplementasikan seluruh tugas opsional (Nilai Tambah):
 
-- **Mode Gelap (Dark Mode):** Dapat diaktifkan melalui ikon ☀️/🌙 di header. Preferensi disimpan menggunakan `localStorage` agar tidak hilang saat halaman di-refresh.
+- **Mode Gelap (Dark Mode):** Dapat diaktifkan melalui ikon dark mode atau light mode di header. Preferensi disimpan menggunakan `localStorage` agar tidak hilang saat halaman di-refresh.
 - **Fitur Pencarian Real-time:** Memungkinkan pencarian kartu secara cepat berdasarkan ID Sensor (mis. "SNS-A01") atau Lokasi (mis. "Rak 1").
 - **Auto-Refresh Data:** Data di-_fetch_ dan di-_render_ ulang secara otomatis setiap 30 detik tanpa me-_reload_ halaman, dilengkapi dengan indikator waktu _update_ visual di bagian atas grid.
 
